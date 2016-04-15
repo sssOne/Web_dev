@@ -1,0 +1,54 @@
+/*TRANSFER PAGE CSS*/
+.border-line span {
+    border-bottom: 2px solid #000;
+}
+.transfers .nav-tabs {
+    border-bottom: none;
+}
+.transfers .nav-tabs > li {
+    width: 50%;
+}
+.transfers .nav-tabs > li > a {
+    color: #333;
+    background-color: #eee;
+    border: 1px solid transparent;
+    border-color: #eee #eee #ddd;
+    border-radius: 0;
+    margin-right: 0px;
+    padding: 8px 11px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+.transfers .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    background-color: #6189fb;
+    border-color: #6189fb #6189fb transparent;
+    color: #fff;
+}
+.transfers .tab-content {
+    border-top: none;
+    border: 1px solid #ccc;
+    padding: 30px 0 0;
+}
+.transfers form {
+    padding: 0 10px;
+}
+.subscription .table tr th {
+    padding: 13px 8px;
+}
+.subscription .table-responsive > .table > tbody > tr > td, .table-responsive > .table > tbody > tr > th, .table-responsive > .table > tfoot > tr > td, .table-responsive > .table > tfoot > tr > th, .table-responsive > .table > thead > tr > td, .table-responsive > .table > thead > tr > th {
+    white-space: unset;
+}
+@media only screen and (max-width: 980px) and (min-width: 768px) {
+    /*TRANSFER PAGE CSS*/
+    .transfers .form-control {
+        margin-bottom: 15px;
+    }
+    .color {
+        margin-bottom: 15px;
+    }
+    .dropdown-menu.subscription {
+        left: -270px;
+        margin: 7px 0 !important;
+        right: -320px;
+    }
+}
