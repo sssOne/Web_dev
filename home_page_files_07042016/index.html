@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>StreetOne</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/buttons.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/newstyle.css">
+	    <link rel="stylesheet" href="js/slider/bootstrap-slider.css">
+	    <link rel="stylesheet" href="js/radio-slider/radios-to-slider.css">
+	</head>
+	<body>
+		<header>
+			<nav id="navbar-search"  class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-nav" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+
+					<!-- MOBILE VIEW LOGO SECTION -->
+					<div class="col-xs-12 text-center visible-xs">
+						<a href="" class="logo">
+							<span class="streetone">StreetOne</span>
+						</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="mobile-nav">
+
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href=""><i class="glyphicon glyphicon-home"></i> Home</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-lock"></i> Login</a>
+								<div class="dropdown-menu login">
+									<form class="form-inline">
+										<div class="form-group">
+											<input type="email" class="form-control" placeholder="jane.doe@example.com">
+										</div>
+										<div class="form-group">
+											<input type="password" class="form-control" placeholder="Password">
+										</div>
+										<div class="form-group">
+											<button type="submit" class="btn btn-sm btn-default color">Login</button>
+										</div>
+									</form>
+								</div>
+							</li>
+							<li class="dropdown register">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i> Register</a>
+								<div class="dropdown-menu">
+									<form class="form-inline">
+										<div class="form-group">
+											<input type="email" class="form-control" placeholder="jane.doe@example.com">
+										</div>
+										<div class="form-group">
+											<input type="password" class="form-control" placeholder="Password">
+										</div>
+										<div class="form-group">
+											<input type="password" class="form-control" placeholder="Confirm Password">
+										</div>
+										<button type="submit" class="btn btn-sm btn-default color">Register</button>
+									</form>
+								</div>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+
+				<div class="container-fluid">
+					<div class="row">
+						<div class="line-holder">
+							<div class="line left-line"></div>
+							<div class="line right-line"></div>
+						</div>
+
+						<!-- DESKTOP & TAB VIEW LOGO SECTION -->
+						<div class="col-xs-12 text-center hidden-xs">
+							<a href="" class="logo">
+								<span class="streetone">StreetOne</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		
+		<!-- BANNER SECTION START -->
+		<section class="banner">
+			<div class="container">
+				<div class="row" style="padding: 5% 0;">
+					<div class="col-xs-12 text-center">
+						<h2 class="invest text-center">INVESTING MADE SIMPLE</h2>
+						<h4 class="tag">Summer 2016</h4>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- BANNER SECTION END -->
+
+		<div class="clearfix"></div>
+		
+		<!-- We take the complexity Section Start -->
+		<section>
+			<div class="container">
+				<div class="row investing">
+					<h2 style="color: #6189FB;">We take the complexity <span style="color: #f25454;"><b>out</b></span> of investing</h2>
+					<div class="col-sm-12">
+						<p class="content text-center">
+							Our high speed computers continuously scan the markets for
+							opportunities.<br>
+							We observe the markets so you don't have to.
+							The result is a crisp recommendation that aims to track the
+							investment objectives of your strategy.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- We take the complexity Section End -->
+
+		<!-- investment & Chart Section Start -->
+		<section class="choose">
+			<div class="container">
+				<!-- investment amount and strategy Section Start -->
+				<h2>
+					Choose your investment amount and strategy
+				</h2>
+				<div class="row" style="padding-bottom: 30px;">
+					<div class="col-sm-6 text-center">
+						<h4>Investment Amount</h4>
+						<input id="ex12c" type="text" data-slider-step="10000">
+					</div>
+					<div class="col-sm-6 text-center margin-top-xs">
+						<h4>Investment Strategy</h4>
+						<div class="row">
+							<div class="col-sm-8 col-sm-offset-2">
+								<div id="radios">
+									<input id="option1" name="options" type="radio" value="conservative" class="strategy" checked>
+									<label for="option1" class="stratlabel" id="conservative" style="display:block;">Conservative</label>
+
+									<input id="option2" name="options" type="radio" value="moderate" class="strategy">
+									<label for="option2" class="stratlabel" id="moderate">Moderate</label>
+
+									<input id="option3" name="options" type="radio" value="aggressive" class="strategy">
+									<label for="option3" class="stratlabel" id="aggressive">Aggressive</label>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<!-- investment amount and strategy Section End -->
+
+				<!-- Chart Section Start -->
+				<div class="row chart">
+					<img src="images/chart.png" alt="chart" class="img-responsive">
+				</div>
+				<!-- Chart Section End -->
+				
+			</div>
+		</section>
+		<!-- investment & Chart Section End -->
+		
+		<!-- Fund your account and relax Section Start -->
+		<section>
+			<div class="container">
+				<div class="row investing">
+					<h2>Fund your account and relax</h2>
+					<div class="col-sm-10">
+						<p class="content">
+							Fund your investment account and subscribe to the
+							recommended portfolio.
+							Our fully automated digital investment service responds to
+							changing market conditions and keeps your portfolio on track
+							to meet the objectives of your strategy.
+						</p>
+					</div>
+					<div class="col-sm-2">
+						<img src="images/cross.jpg" alt="cross" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Fund your account and relax Section End -->
+
+		<!-- Get started Section Start -->
+		<section>
+			<div class="container">
+				<h2 class="text-center">Get started</h2>
+				<div class="free-register">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2 style="color: #fff;">Open Your Simple Investment Account Now</h2>
+								<a class="btn btn-danger btn-md sharp" role="button" data-toggle="collapse" href="#getcollapse" aria-expanded="false" aria-controls="getcollapse">
+									Free to Register
+								</a>
+						</div>
+					</div>
+					<div class="collapse" id="getcollapse">
+						<div class="well form">
+							<form class="form-inline inline-form">
+								<div class="form-group">
+									<label>Email :</label>
+									<input type="email" class="form-control" placeholder="jane.doe@example.com" required>
+								</div>
+								<div class="form-group">
+									<label>Password :</label>
+									<input type="password" class="form-control" placeholder="Password" required>
+								</div>
+								<div class="form-group">
+									<label>Confirm Password :</label>
+									<input type="password" class="form-control" placeholder="Confirm Password" required>
+								</div>
+								<button type="submit" class="btn btn-sm btn-default color">Register</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Get started Section End -->
+		
+		<!-- Footer Section Start -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<h3>StreetOne</h3>
+						<ul class="list-unstyled">
+							<li><a href="">Terms & Legal</a></li>
+							<li><a href="">Privacy & Security</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-4">
+						<h3>Follow Us</h3>
+						<ul class="list-unstyled social">
+							<li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
+							<li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
+							<li><a href=""><i class="fa fa-google-plus"></i> Google +</a></li>
+							<li><a href=""><i class="fa fa-linkedin"></i> Linkedin</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-4">
+						<h3>Contact Us</h3>
+						<address>
+							<i class="fa fa-envelope"></i>  : <a href=""><b>support@streetone.com</b></a>
+						</address>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div style="background: #090909; padding: 10px; margin: 0; color: #fff;" class="row">
+			<div class="container">
+				<div class="col-sm-12">
+					All Rights Reserved &copy; 2016, StreetOne, Inc.
+					<a href="http://streetone.com/" style="color: #999;">Investing Made Simple</a>
+				</div>
+			</div>
+		</div>
+		<!-- Footer Section End -->
+
+
+		
+
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slider/bootstrap-slider.js"></script>
+		<script src="js/radio-slider/jquery.radios-to-slider.js"></script>
+		<script>
+		    //Range Slider
+		    $("#ex12c").slider({ id: "slider12c", min: 5000, max: 100000,tooltip_position:'bottom', tooltip: 'always', formatter: function (value) { return '$'+value; }});
+		    //RADIO SLIDER
+		    $("#radios").radiosToSlider();
+		    $(".slider-level").click(function () {
+		    	var radval = $(".strategy:checked").val();
+		    	$(".stratlabel").hide();
+		    	$("#"+radval).show();
+		    });
+		</script>
+		<script type="text/javascript" src="webfont/fontsmoothie.min.js" async></script>
+		<script type="text/javascript">
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200){  
+					$('.navbar').addClass("compact-nav animated slideInDown");
+					// $('.banner').addClass("animated fadeInUp");
+					$('header').addClass("compact-header");
+				}
+				else{
+					$('.navbar').removeClass("compact-nav animated slideInDown");
+					// $('.banner').removeClass("animated fadeInUp");
+					$('header').removeClass("compact-header");
+				}
+			});
+		</script>
+	</body>
+</html>
