@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Investing Chart</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+    <link href="js/slider/bootstrap-slider.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="js/radio-slider/radios-to-slider.css">
+	<style type="text/css">
+		.navbar-inverse .navbar-nav > li > a {
+			color: #6189FB;
+		    text-transform: capitalize;
+		}
+		hr {
+			border-color: #000;
+		}
+		
+		.form-control {
+		    border: 1px solid #999;
+		}
+	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-responsive"></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href=""><i class="fa fa-sign-out"></i> Logoff</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<section style="padding: 50px 0px ;">
+		<div class="container">
+			<h2 class="text-center">TRANSFERS</h2>
+			<br>
+			<div class="transfers">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#deposit" aria-controls="deposit" role="tab" data-toggle="tab">Deposit</a></li>
+					<li role="presentation"><a href="#withdrawal" aria-controls="withdrawal" role="tab" data-toggle="tab">Withdrawal</a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="deposit">
+						<form class="form-inline">
+							<div class="form-group">
+								<input type="text" placeholder="Bank Routing Number" class="form-control">
+							</div>
+							<div class="form-group">
+								<input type="text" placeholder="Checking Account Number" class="form-control">
+							</div>
+							<div class="form-group">
+								<input type="text" placeholder="Transfer Amount" class="form-control">
+							</div>
+							<button class="btn btn-default color" type="submit">SUBMIT</button>
+						</form>
+
+						<hr>
+			
+						<div class="table-responsive">
+							<table class="table">
+								<thead>
+									<tr style="border-bottom: 1px solid #000;">
+										<th>Date</th>
+										<th>Bank Routing Number</th>
+										<th>Checking Account Number</th>
+										<th>Amount</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Feb 27, 2016</td>
+										<td>ST00012</td>
+										<td>1111111111</td>
+										<td>$ 25,000.00</td>
+									</tr>
+									<tr>
+										<td>Feb 16, 2016</td>
+										<td>ST00012</td>
+										<td>1111111111</td>
+										<td>$ 10,000.00</td>
+									</tr>
+									<tr>
+										<td>Feb 06, 2016</td>
+										<td>ST00012</td>
+										<td>1111111111</td>
+										<td>$ 15,000.00</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="withdrawal">
+						<form class="form-inline">
+							<div class="form-group">
+								<input type="text" placeholder="Withdrawal Amount" class="form-control">
+							</div>
+							<button class="btn btn-default color" type="submit">SUBMIT</button>
+						</form>
+						
+						<hr>
+			
+						<div class="table-responsive">
+							<table class="table">
+								<thead>
+									<tr style="border-bottom: 1px solid #000;">
+										<th>Withdrawal Date</th>
+										<th>Withdrawal Amount</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Feb 27, 2016</td>
+										<td>$ 25,000.00</td>
+									</tr>
+									<tr>
+										<td>Feb 16, 2016</td>
+										<td>$ 10,000.00</td>
+									</tr>
+									<tr>
+										<td>Feb 06, 2016</td>
+										<td>$ 15,000.00</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+
+
+
+
+
+
+
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slider/bootstrap-slider.js"></script>
+<script src="js/radio-slider/jquery.radios-to-slider.js"></script>
+<script>
+    //Range Slider
+    $("#ex12c").slider({ id: "slider12c", min: 5000, max: 100000,tooltip_position:'bottom', tooltip: 'always', formatter: function (value) { return '$'+value; }});
+    //RADIO SLIDER
+    $("#radios").radiosToSlider();
+    $(".slider-level").click(function () {
+    	var radval = $(".strategy:checked").val();
+    	$(".stratlabel").hide();
+    	$("#"+radval).show();
+    });
+
+    //TooltipDiv
+    $('.poptooltip').popover({
+	    container: 'body',
+	    html: true,
+	    placement: 'bottom',
+	    trigger: 'hover',
+	    content: function () {
+	    	var blockid = $(this).attr("data-block-id");
+	        return $('#'+blockid).html();
+	    }
+	});
+
+	$('.poptooltip').on('click', function (e) {
+    	$('.poptooltip').not(this).popover('hide');
+	});
+
+	$('body').on('click', function (e) {
+	    $('[data-toggle="popover"]').each(function () {
+	        //the 'is' for buttons that trigger popups
+	        //the 'has' for icons within a button that triggers a popup
+	        if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+	            $(this).popover('hide');
+	        }
+	    });
+	});
+</script>
+</body>
+</html>

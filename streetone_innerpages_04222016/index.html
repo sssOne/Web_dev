@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Investing Chart</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+    <link href="js/slider/bootstrap-slider.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="js/radio-slider/radios-to-slider.css">
+
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-responsive"></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href=""><i class="fa fa-home"></i> Home</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-sign-in"></i> Login</a>
+						<ul class="dropdown-menu login">
+							<form class="form-inline" id="float">
+								<div class="form-group">
+									<input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+								</div>
+								<button type="submit" class="btn btn-default color">Login</button>
+							</form>
+						</ul>
+					</li>
+					<li class="dropdown register">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> Register</a>
+						<ul class="dropdown-menu">
+							<form class="form-inline">
+								<div class="form-group">
+									<input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+								</div>
+								<button type="submit" class="btn btn-default color">Register</button>
+							</form>
+						</ul>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<section class="bg-style">
+		<div class="container-fluid heading-bg1">
+			<div class="row" style="padding: 15px 0 25px;">
+				<div class="col-xs-12">
+					<h1 class="text-center" style="letter-spacing: 3px; font-size: 40px;"><span1>INVESTING MADE</span1> <strong>SIMPLE</strong></h1>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row" style="padding-bottom: 30px;">
+				<div class="col-sm-6 text-center">
+					<h4>Investment Amount</h4>
+					<input id="ex12c" type="text" data-slider-step="10000">
+				</div>
+				<div class="col-sm-6 text-center margin-top-xs">
+					<h4>Investment Strategy</h4>
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2">
+							<div id="radios">
+								<input id="option1" name="options" type="radio" value="conservative" class="strategy" checked>
+								<label for="option1" class="stratlabel" id="conservative" style="display:block;">Conservative</label>
+
+								<input id="option2" name="options" type="radio" value="moderate" class="strategy">
+								<label for="option2" class="stratlabel" id="moderate">Moderate</label>
+
+								<input id="option3" name="options" type="radio" value="aggressive" class="strategy">
+								<label for="option3" class="stratlabel" id="aggressive">Aggressive</label>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row chart">
+				<div class="col-sm-6">
+					<h4>Optimal Model Chart.</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloribus libero error debitis hic aspernatur deserunt facere veniam magni magnam saepe corporis non tempore quis, obcaecati maxime praesentium eius ex repudiandae fugit voluptates, ratione voluptatum animi officia ipsum! Recusandae, perferendis!</p>
+					<p><a href="" class="btn btn-danger">Read More</a></p>
+				</div>
+				<div class="col-sm-6">
+					<img src="images/chart.jpg" class="img-responsive">
+				</div>
+			</div>
+			<div class="free-register">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h2 style="color: #FFF;">Open Your Simple Investment Account Now</h2>
+					
+							<a class="btn btn-danger btn-lg" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+								Free to Register
+							</a>
+					</div>
+				</div>
+				<div class="collapse" id="collapseExample">
+					<div class="well form">
+						<form class="form-inline inline-form">
+							<div class="form-group">
+								<label for="exampleInputEmail2">Email :</label>
+								<input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com" required>
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Password :</label>
+								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Confirm Password :</label>
+								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password" required>
+							</div>
+							<button type="submit" class="btn btn-default color">Register</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="buttons">
+				<h2 class="text-center" style="color: #eee;margin-bottom: 35px;">BUILT TO INVEST</h2>
+				<div class="row">
+					<div class="col-sm-4 text-center">
+						<div class="advice advice-bg-1">
+
+							<a role="button" class="poptooltip" data-block-id="pop1" data-toggle="popover">
+								<h3>GET ADVICE</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum est quae accusantium exercitationem, quos labore maxime minima adipisci?</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<div class="advice advice-bg-2">
+
+							<a role="button" class="poptooltip"  data-block-id="pop2" data-toggle="popover">
+								<h3>FUND YOUR ACCOUNT</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum est quae accusantium exercitationem, quos labore maxime minima adipisci?</p>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-sm-4 text-center">
+						<div class="advice advice-bg-3">
+							<a role="button" class="poptooltip"  data-block-id="pop3" data-toggle="popover">
+								<h3>RELAX</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum est quae accusantium exercitationem, quos labore maxime minima adipisci?</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="popper-content" id="pop1">
+					<div class="container poperblock">
+						<div class="row">
+							<div class="col-xs-12">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="popper-content" id="pop2">
+					<div class="container poperblock">
+						<div class="row">
+							<div class="col-xs-12">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="popper-content" id="pop3">
+					<div class="container poperblock">
+						<div class="row">
+							<div class="col-xs-12">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<h3>About Us</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore voluptates quas nam amet nostrum repudiandae at vel impedit illo autem.</p>
+				</div>
+				<div class="col-sm-3">
+					<h3>Heading</h3>
+					<ul class="list-unstyled">
+						<li><a href="">Lorem 1</a></li>
+						<li><a href="">Lorem 2</a></li>
+						<li><a href="">Lorem 3</a></li>
+						<li><a href="">Lorem 4</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<h3>Follow Us</h3>
+					<ul class="list-unstyled social">
+							<li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
+							<li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
+							<li><a href=""><i class="fa fa-google-plus"></i> Google +</a></li>
+							<li><a href=""><i class="fa fa-linkedin"></i> Linkedin</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<h3>Contact Us</h3>
+					<address>
+						<b>Investing Made Simple</b> <br>
+							#12-5-3/1/B, loremipsum,<br> Canada, ipsumdorol.<br>
+							<i class="fa fa-phone"></i> : 040-1234 255 12<br>
+							<i class="fa fa-envelope"></i>  : <a href=""><b>streetone@gmail.com</b></a>
+					</address>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<div style="background: #090909; padding: 10px; margin: 0; color: #fff;" class="row">
+			<div class="container">
+				<div class="col-sm-6">
+					All Rights Reserved &copy; 2015, <a style="color: #999;" href="index.html">Investing Made</a> 
+				</div>
+				<div class="col-sm-6 text-right">
+					Design &amp; Developed by  <a style="color: #999;" title="Global I-Matrix Software Solutions Pvt. Ltd." href="http://www.imatrixsolutions.com">Global I-Matrix</a>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slider/bootstrap-slider.js"></script>
+<script src="js/radio-slider/jquery.radios-to-slider.js"></script>
+<script>
+    //Range Slider
+    $("#ex12c").slider({ id: "slider12c", min: 5000, max: 100000,tooltip_position:'bottom', tooltip: 'always', formatter: function (value) { return '$'+value; }});
+    //RADIO SLIDER
+    $("#radios").radiosToSlider();
+    $(".slider-level").click(function () {
+    	var radval = $(".strategy:checked").val();
+    	$(".stratlabel").hide();
+    	$("#"+radval).show();
+    });
+
+    //TooltipDiv
+    $('.poptooltip').popover({
+	    container: 'body',
+	    html: true,
+	    placement: 'bottom',
+	    trigger: 'hover',
+	    content: function () {
+	    	var blockid = $(this).attr("data-block-id");
+	        return $('#'+blockid).html();
+	    }
+	});
+
+	$('.poptooltip').on('click', function (e) {
+    	$('.poptooltip').not(this).popover('hide');
+	});
+
+	$('body').on('click', function (e) {
+	    $('[data-toggle="popover"]').each(function () {
+	        //the 'is' for buttons that trigger popups
+	        //the 'has' for icons within a button that triggers a popup
+	        if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+	            $(this).popover('hide');
+	        }
+	    });
+	});
+</script>
+</body>
+</html>
