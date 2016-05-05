@@ -1,0 +1,32 @@
+navin@optionmatrix.com  (option matrix 16 dollars)
+
+SRA OSS India pvt. Ltd
+
+
+streetone links
+
+http://demo.gimatrix.in/sone/
+
+
+http://demo.gimatrix.in/streetone/investments.html
+
+
+1. alpha
+2. beta (streetone test env)
+3. sigma (streetone stage)
+4. psi (production streetone infrastructure)
+
+
+
+1. alpha( developers)
+
+code moves to github
+
+2. github to beta
+
+clone
+
+3. beta to sigma
+
+two ways we can moved the code
+1. ansible 2. python fabric.
